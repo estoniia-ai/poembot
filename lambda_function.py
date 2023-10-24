@@ -2,8 +2,8 @@ import openai
 import os
 import json
 
-#Note: I setup the API KEY as a global env variable
 def call_openai_api(text_to_alternate):
+    #Setup API KEY as a global env variable
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return "API key not found"
