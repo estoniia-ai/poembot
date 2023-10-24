@@ -15,7 +15,7 @@ def generate_poem(slogan):
             },
             {
                 "role": "user",
-                "content": f"Compose a three-versed poem titled '{slogan}' that explains the concept from the title."
+                "content": f"Compose a haiku titled '{slogan}' that explains the concept from the title."
             }
         ]
     )
