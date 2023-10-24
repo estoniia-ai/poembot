@@ -20,3 +20,4 @@ completion = openai.ChatCompletion.create(
 )
 
 # Print the generated text
+print(completion['choices'][0]['message']['content'])
