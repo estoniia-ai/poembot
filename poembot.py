@@ -1,7 +1,10 @@
 import os
 import openai
+
+# Get API Key from environment variable
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# Create a chat completion request
 completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
@@ -16,4 +19,4 @@ completion = openai.ChatCompletion.create(
     ]
 )
 
-print(completion.choices[0].message)
+# Print the generated text
